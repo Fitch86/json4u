@@ -1,4 +1,4 @@
-import { useRouter } from "next/navigation"; 
+import { redirect } from "next/navigation"; 
 import FAQ from "@/containers/landing/FAQ";
 import Features from "@/containers/landing/Features";
 import HeroTitle from "@/containers/landing/HeroTitle";
