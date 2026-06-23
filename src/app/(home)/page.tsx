@@ -1,7 +1,16 @@
+import { useEffect } from "react";  
+import { useRouter } from "next/navigation"; 
 import FAQ from "@/containers/landing/FAQ";
 import Features from "@/containers/landing/Features";
 import HeroTitle from "@/containers/landing/HeroTitle";
 import { Pricing } from "@/containers/pricing";
+
+export default function Index() {  
+  const router = useRouter();  
+    
+  useEffect(() => {  
+    router.push("/editor");  
+  }, [router]);  
 
 export default function Index() {
   return (
